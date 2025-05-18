@@ -1,0 +1,118 @@
+{
+	"info": {
+		"_postman_id": "6adf1697-e322-4748-be8e-7aa804f40149",
+		"name": "Enefit",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "45045700",
+		"_collection_link": "https://robinp-5352087.postman.co/workspace/Robin-P's-Workspace~b55e0160-f2c4-4a3b-8ebd-acfc1cd2256c/collection/45045700-6adf1697-e322-4748-be8e-7aa804f40149?action=share&source=collection_link&creator=45045700"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "jane_smith",
+							"description": "2 metering points",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "username",
+							"value": "john_doe",
+							"description": "1 metering point",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"description": "same for both",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Logout",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/auth/logout",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"auth",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get consumptions with prices",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/consumption/with-prices",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"consumption",
+						"with-prices"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get customer metering points",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/metering-points",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"metering-points"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
